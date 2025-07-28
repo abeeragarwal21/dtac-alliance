@@ -1,0 +1,18 @@
+{
+	"name": "dtac-alliance",
+	"version": "1.0.0",
+	"description": "DTAC ALliance website",
+	"scripts": {
+		"start": "parcel index.html",
+		"build": "parcel build index.html"
+	},
+	"repository": {
+		"type": "git",
+		"url": "dtac-alliance"
+	},
+	"author": "abeeragarwal21",
+	"license": "ISC",
+	"devDependencies": {
+		"parcel": "^2.15.4"
+	}
+}
