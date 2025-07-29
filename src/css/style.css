@@ -1,47 +1,10 @@
-:root {
-    /* Font size scale (rem) */
-    --font-xs: 1.2rem; /* 12px */
-    --font-sm: 1.4rem; /* 14px */
-    --font-body: 1.6rem; /* 16px */
-    --font-lg: 1.8rem; /* 18px */
-    --font-h3: 2.2rem; /* 22px */
-    --font-h2: 2.8rem; /* 28px */
-    --font-h1: 3.6rem; /* 36px */
-
-    /* Line height scale */
-    --lh-tight: 1.2;
-    --lh-normal: 1.5;
-    --lh-loose: 1.6;
-
-    /* Spacing scale (rem) */
-    --space-xxs: 0.4rem; /* 4px */
-    --space-xs: 0.8rem; /* 8px */
-    --space-sm: 1.2rem; /* 12px */
-    --space-md: 1.6rem; /* 16px */
-    --space-lg: 2.4rem; /* 24px */
-    --space-xl: 3.2rem; /* 32px */
-    --space-2xl: 4.8rem; /* 48px */
-    --space-3xl: 6.4rem; /* 64px */
-    --space-4xl: 7.2rem; /* 72px */
-
-    /* Colours */
-    --blue-primary: #2b4496;
-    --blue-light: #e9f8ff;
-    --blue-light2: #eaecf4;
-    --blue-dark: #0e1630;
-    --grey: #525759;
-    --black: #000000;
-    --white: #ffffff;
+/* Hero section */
+.section-hero {
+    background-image: url("/src/img/hero-banner.png");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 75vh;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-    overflow-x: hidden !important;
-    font-size: 62.5%;
-}
+/* Why us section */
