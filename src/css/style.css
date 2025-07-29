@@ -35,8 +35,14 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
 }
 
 .section-standout__heading {
-    font-size: 9rem;
+    font-size: 6.4rem;
+}
+
+/* Services section */
+#section-services {
+    background-color: var(--blue-background);
 }
