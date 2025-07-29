@@ -6,11 +6,13 @@
     --font-xs: 1.2rem; /* 12px */
     --font-sm: 1.4rem; /* 14px */
     --font-body: 1.6rem; /* 16px */
-    --font-md: 1.8rem; /* 18px */
-    --font-lg: 2.2rem; /* 22px */
+    --font-md: 2rem; /* 20px */
+    --font-lg: 2.4rem; /* 24px */
     --font-h3: 3.6rem; /* 36px */
     --font-h2: 4.4rem; /* 44px */
     --font-h1: 5.2rem; /* 52px */
+
+    --font-icon: 2.6rem; /* 26px */
 
     /* Line height scale */
     --lh-tight: 1.1;
@@ -88,36 +90,19 @@ h3 {
 }
 
 h4 {
-    font-size: var(--font-lg);
+    font-size: var(--font-md);
     font-weight: 600;
 }
 
-.link:link,
-.link:visited {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-size: var(--font-sm);
-    color: var(--blue-primary);
-    gap: var(--space-xxs);
-    transition: all 0.2s;
-    font-weight: 500;
-}
-
-.link:hover,
-.link:active {
-    color: var(--blue-primary--shade);
-    gap: var(--space-sm);
-}
-
-.link i {
+.paragraph {
     font-size: var(--font-body);
+    line-height: var(--lh-loose);
 }
 
 /* Primary button */
-.btn-primary,
-.btn-primary:link,
-.btn-primary:visited {
+.btn--primary,
+.btn--primary:link,
+.btn--primary:visited {
     text-decoration: none;
     font-size: var(--font-sm);
     background-color: var(--blue-primary);
@@ -129,12 +114,62 @@ h4 {
     width: fit-content;
 }
 
-.btn-primary:hover,
-.btn-primary:active {
+.btn--primary:hover,
+.btn--primary:active {
+    color: var(--white);
     background-color: #1a295a;
 }
 
-/* Header and footer*/
+/* White button */
+.btn--white,
+.btn--white:link,
+.btn--white:visited {
+    text-decoration: none;
+    font-size: var(--font-sm);
+    background-color: var(--white);
+    padding: var(--space-md) var(--space-lg);
+    border-radius: 50px;
+    color: var(--blue-dark);
+    font-weight: 500;
+    transition: all 0.2s;
+    width: fit-content;
+}
+
+.btn--white:hover,
+.btn--white:active {
+    background-color: #1a295a;
+    color: var(--white);
+}
+
+/* Primary Link */
+.link:link,
+.link:visited {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: var(--font-sm);
+    color: var(--blue-primary);
+    gap: var(--space-xxs);
+    transition: all 0.4s;
+    font-weight: 500;
+    padding: var(--space-xs);
+    width: 150px;
+    border-radius: 8px;
+}
+
+.link:hover,
+.link:active {
+    background-color: var(--blue-background);
+    color: var(--blue-primary--shade);
+    gap: var(--space-xs);
+}
+
+.link i {
+    font-size: var(--font-body);
+    font-weight: 600;
+}
+
+/* Header, footer and navigation */
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -154,16 +189,42 @@ h4 {
     margin-bottom: var(--space-md);
 }
 
-.main-footer-grid__left {
+.main-footer__company {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.main-footer__copyright {
+.company__social {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.social__icon:link,
+.social__icon:visited {
+    text-decoration: none;
+    font-size: var(--font-icon);
     background-color: var(--blue-primary);
+    color: var(--blue-light);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    transition: all 0.2s;
+}
+
+.social__icon:hover,
+.social__icon:active {
+    transform: scale(1.1);
+    background-color: var(--blue-primary--shade);
+}
+
+.main-footer__copyright {
+    background-color: var(--blue-light);
     padding: var(--space-sm) var(--space-4xl);
-    color: var(--white);
+    color: var(--grey);
     font-size: var(--font-xs);
     text-align: center;
 }
@@ -203,7 +264,7 @@ h4 {
     border-bottom: 2px solid var(--blue-dark);
 }
 
-/* Section Component*/
+/* Section Component */
 section {
     padding: var(--space-4xl);
 }
@@ -222,17 +283,17 @@ section {
 }
 
 .subheading--grey {
-    font-size: var(--font-lg);
+    font-size: var(--font-md);
     color: var(--grey);
 }
 
 .subheading--blue {
-    font-size: var(--font-lg);
+    font-size: var(--font-md);
     color: var(--blue-primary);
 }
 
 .subheading--white {
-    font-size: var(--font-lg);
+    font-size: var(--font-md);
     color: var(--white);
 }
 
@@ -258,6 +319,7 @@ section {
     flex-direction: column;
     gap: var(--space-md);
     box-shadow: 0 2.4rem 4.8rem -4px rgba(14, 22, 48, 0.1);
+    transition: all 0.3s;
 }
 
 .box__text {
@@ -274,7 +336,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 28px;
+    font-size: var(--font-icon);
     border-radius: 100%;
     color: var(--blue-primary);
 }
