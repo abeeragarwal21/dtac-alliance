@@ -4,6 +4,7 @@
     background-size: cover;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 90vh;
 }
 
 #section-hero .section-top {
@@ -67,6 +68,12 @@
     background-color: var(--blue-background);
 }
 
+.faq-grid {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: var(--space-2xl);
+}
+
 .faq-questions {
     display: flex;
     flex-direction: column;
@@ -76,7 +83,7 @@
 .faq-questions__question {
     background-color: var(--white);
     padding: var(--space-lg);
-    border-radius: 8px;
+    border-radius: var(--border-radius-box);
     display: flex;
     flex-direction: column;
     gap: var(--space-md);
@@ -89,7 +96,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: var(--space-md);
     width: 100%;
+    font-family: inherit;
+    text-align: start;
 }
 
 .question__heading i {
@@ -98,6 +108,12 @@
 
 .hidden {
     display: none;
+}
+
+.faq-aside {
+    height: 100%;
+    background-color: var(--white);
+    border-radius: var(--border-radius-box);
 }
 
 /* Cta Section */

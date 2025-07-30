@@ -46,7 +46,7 @@
 
     /* Border radius */
     --border-radius-btn: 50px;
-    --border-radius-box: 24px;
+    --border-radius-box: 15px;
 }
 
 * {
@@ -322,7 +322,7 @@ section {
 
 .boxes-grid__box {
     background-color: var(--white);
-    border-radius: 24px;
+    border-radius: var(--border-radius-box);
     padding: var(--space-xl);
     display: flex;
     flex-direction: column;
