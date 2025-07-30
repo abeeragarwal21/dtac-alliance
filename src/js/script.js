@@ -16,3 +16,24 @@ faqContainer.addEventListener("click", function (e) {
         faqAnswer.classList.contains("hidden") ? "plus" : "minus"
     }`;
 });
+
+const challengesContainer = document.querySelector(".challenges");
+
+challengesContainer.addEventListener("click", function (e) {
+    const challengeContainer = e.target.closest(".challenges__challenge");
+
+    if (!challengeContainer) {
+        return;
+    }
+
+    const challengeContent = challengeContainer.querySelector(
+        ".challenge__content"
+    );
+    challengeContent.classList.toggle("hidden");
+
+    // // const faqIcon = questionContainer.querySelector(".ph");
+    // // faqIcon.classList = "";
+    // // faqIcon.classList = `ph ph-${
+    // //     faqAnswer.classList.contains("hidden") ? "plus" : "minus"
+    // }`;
+});

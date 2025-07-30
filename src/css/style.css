@@ -3,12 +3,12 @@
     background-image: url("/src/img/hero-banner.png");
     background-size: cover;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 90vh;
+    grid-template-columns: 1fr 1.5fr;
+    height: 100vh;
 }
 
 #section-hero .section-top {
-    margin-top: var(--space-3xl);
+    margin-top: 15rem;
 }
 
 /* Why us section */
@@ -63,6 +63,38 @@
     color: white;
 }
 
+.challenges {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.challenges__challenge {
+    border: 2px solid var(--white);
+    padding: var(--space-lg);
+    border-radius: var(--border-radius-box);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.challenge__heading {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    width: 100%;
+    font-family: inherit;
+    text-align: start;
+    color: var(--white);
+}
+
+.challenge__heading i {
+    font-size: var(--font-lg);
+}
+
 /* FAQs Section */
 #section-faq {
     background-color: var(--blue-background);
@@ -104,10 +136,6 @@
 
 .question__heading i {
     font-size: var(--font-lg);
-}
-
-.hidden {
-    display: none;
 }
 
 .faq-aside {

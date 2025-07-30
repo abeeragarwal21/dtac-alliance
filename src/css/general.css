@@ -65,6 +65,11 @@ body {
     font-family: var(--body-font);
     height: 100%;
     width: 100%;
+    position: relative;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Text (headings, paragraphs etc) */
@@ -184,6 +189,13 @@ h4 {
     align-items: center;
     padding: var(--space-lg) var(--space-2xl);
     background-color: var(--blue-background);
+    position: fixed;
+    width: 100%;
+}
+
+.main-header__logo {
+    font-size: var(--font-md);
+    font-weight: 500;
 }
 
 .main-footer {
