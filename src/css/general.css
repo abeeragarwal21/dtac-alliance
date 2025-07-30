@@ -1,5 +1,4 @@
-/* Google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
     /* Font size scale (rem) */
@@ -42,8 +41,12 @@
     --white: #ffffff;
 
     /* Fonts */
-    --display-font: "Sora", sans-serif;
+    --display-font: "Unna", serif;
     --body-font: "Inter", sans-serif;
+
+    /* Border radius */
+    --border-radius-btn: 50px;
+    --border-radius-box: 24px;
 }
 
 * {
@@ -99,19 +102,31 @@ h4 {
     line-height: var(--lh-loose);
 }
 
+.italic {
+    font-style: italic;
+}
+
+.heading-highlight {
+    color: var(--blue-primary);
+}
+
 /* Primary button */
-.btn--primary,
-.btn--primary:link,
-.btn--primary:visited {
+.btn {
     text-decoration: none;
     font-size: var(--font-sm);
-    background-color: var(--blue-primary);
     padding: var(--space-md) var(--space-lg);
-    border-radius: 50px;
-    color: var(--white);
+    border-radius: var(--border-radius-btn);
     font-weight: 500;
     transition: all 0.2s;
     width: fit-content;
+}
+
+.btn--primary,
+.btn--primary:link,
+.btn--primary:visited {
+    background-color: var(--blue-primary);
+
+    color: var(--white);
 }
 
 .btn--primary:hover,
@@ -124,20 +139,13 @@ h4 {
 .btn--white,
 .btn--white:link,
 .btn--white:visited {
-    text-decoration: none;
-    font-size: var(--font-sm);
     background-color: var(--white);
-    padding: var(--space-md) var(--space-lg);
-    border-radius: 50px;
     color: var(--blue-dark);
-    font-weight: 500;
-    transition: all 0.2s;
-    width: fit-content;
 }
 
 .btn--white:hover,
 .btn--white:active {
-    background-color: #1a295a;
+    background-color: var(--blue-primary--shade);
     color: var(--white);
 }
 
@@ -282,18 +290,19 @@ section {
     gap: var(--space-xs);
 }
 
-.subheading--grey {
+.subheading {
     font-size: var(--font-md);
+}
+
+.subheading--grey {
     color: var(--grey);
 }
 
 .subheading--blue {
-    font-size: var(--font-md);
     color: var(--blue-primary);
 }
 
 .subheading--white {
-    font-size: var(--font-md);
     color: var(--white);
 }
 
@@ -320,6 +329,7 @@ section {
     gap: var(--space-md);
     box-shadow: 0 2.4rem 4.8rem -4px rgba(14, 22, 48, 0.1);
     transition: all 0.3s;
+    min-height: 32rem;
 }
 
 .box__text {
