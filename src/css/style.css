@@ -63,6 +63,14 @@
     color: white;
 }
 
+.accordion--challenges .accordion__panel {
+    background-color: transparent;
+}
+
+.accordion--challenges .accordion__panel .panel__heading {
+    color: var(--white);
+}
+
 /* FAQs Section */
 #section-faq {
     background-color: var(--blue-background);
