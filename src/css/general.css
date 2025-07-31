@@ -196,6 +196,8 @@ h4 {
 .main-header__logo {
     font-size: var(--font-md);
     font-weight: 500;
+    text-decoration: none;
+    color: var(--black);
 }
 
 .main-footer {

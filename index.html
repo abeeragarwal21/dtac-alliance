@@ -9,15 +9,17 @@
     </head>
     <body>
         <header class="main-header">
-            <div class="main-header__logo">
+            <a href="/#" class="main-header__logo">
                 <span class="heading-highlight">DTAC</span>
                 Alliance
-            </div>
+            </a>
             <nav class="main-header__nav">
-                <a href="#" class="nav__link">Why Us</a>
-                <a href="#" class="nav__link">Our Services</a>
-                <a href="#" class="nav__link">Addressing Challenges</a>
-                <a href="#" class="nav__link">FAQs</a>
+                <a href="/#section-why" class="nav__link">Why Us</a>
+                <a href="/#section-services" class="nav__link">Our Services</a>
+                <a href="/#section-challenges" class="nav__link"
+                    >Addressing Challenges</a
+                >
+                <a href="/#section-faq" class="nav__link">FAQs</a>
             </nav>
             <a href="#" class="btn btn--primary">Contact Us</a>
         </header>
@@ -217,85 +219,88 @@
                         />
                     </svg>
                 </div>
-                <div class="accordion accordion--challenges">
-                    <div class="accordion__panel">
-                        <button class="panel__heading">
-                            <h4>1. Clinical Safety</h4>
-                            <i class="ph ph-plus"></i>
-                        </button>
-                        <div class="panel__content hidden">
-                            <p class="paragraph">
-                                With clinical safety experts, we ensure your
-                                compliance with DCB0129 standards, provide
-                                accurate hazard logs, and ensure clinical risks
-                                are proactively identified and rigorously
-                                controlled—giving you peace of mind in the
-                                safety of your digital health technology.
-                            </p>
+                <div class="challenges-grid">
+                    <div class="accordion accordion--challenges">
+                        <div class="accordion__panel">
+                            <button class="panel__heading">
+                                <h4>1. Clinical Safety</h4>
+                                <i class="ph ph-plus"></i>
+                            </button>
+                            <div class="panel__content hidden">
+                                <p class="paragraph">
+                                    With clinical safety experts, we ensure your
+                                    compliance with DCB0129 standards, provide
+                                    accurate hazard logs, and ensure clinical
+                                    risks are proactively identified and
+                                    rigorously controlled—giving you peace of
+                                    mind in the safety of your digital health
+                                    technology.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="accordion__panel">
-                        <button class="panel__heading">
-                            <h4>2. Technical Security</h4>
-                            <i class="ph ph-plus"></i>
-                        </button>
-                        <div class="panel__content hidden">
-                            <p class="paragraph">
-                                We proactively identify and mitigate
-                                vulnerabilities through rigorous cybersecurity
-                                assessments including DSPT, Cyber Essentials &
-                                Penetration Testing. We Provide tailored
-                                guidance aligned to NHS digital security
-                                standards, ensuring your technology is robust,
-                                secure, and compliant.
-                            </p>
+                        <div class="accordion__panel">
+                            <button class="panel__heading">
+                                <h4>2. Technical Security</h4>
+                                <i class="ph ph-plus"></i>
+                            </button>
+                            <div class="panel__content hidden">
+                                <p class="paragraph">
+                                    We proactively identify and mitigate
+                                    vulnerabilities through rigorous
+                                    cybersecurity assessments including DSPT,
+                                    Cyber Essentials & Penetration Testing. We
+                                    Provide tailored guidance aligned to NHS
+                                    digital security standards, ensuring your
+                                    technology is robust, secure, and compliant.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="accordion__panel">
-                        <button class="panel__heading">
-                            <h4>3. Data Protection</h4>
-                            <i class="ph ph-plus"></i>
-                        </button>
-                        <div class="panel__content hidden">
-                            <p class="paragraph">
-                                Our privacy specialists conduct thorough Data
-                                Protection Impact Assessments (DPIAs), implement
-                                GDPR-compliant frameworks, and provide strategic
-                                advice to safeguard patient data, maintaining
-                                full regulatory compliance, including a Virtual
-                                DPO service.
-                            </p>
+                        <div class="accordion__panel">
+                            <button class="panel__heading">
+                                <h4>3. Data Protection</h4>
+                                <i class="ph ph-plus"></i>
+                            </button>
+                            <div class="panel__content hidden">
+                                <p class="paragraph">
+                                    Our privacy specialists conduct thorough
+                                    Data Protection Impact Assessments (DPIAs),
+                                    implement GDPR-compliant frameworks, and
+                                    provide strategic advice to safeguard
+                                    patient data, maintaining full regulatory
+                                    compliance, including a Virtual DPO service.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="accordion__panel">
-                        <button class="panel__heading">
-                            <h4>4. Interoperability</h4>
-                            <i class="ph ph-plus"></i>
-                        </button>
-                        <div class="panel__content hidden">
-                            <p class="paragraph">
-                                We align your product to NHS interoperability
-                                standards (FHIR, HL7, Open APIs), facilitating
-                                seamless integration with existing healthcare
-                                systems and enhancing overall operational
-                                effectiveness.
-                            </p>
+                        <div class="accordion__panel">
+                            <button class="panel__heading">
+                                <h4>4. Interoperability</h4>
+                                <i class="ph ph-plus"></i>
+                            </button>
+                            <div class="panel__content hidden">
+                                <p class="paragraph">
+                                    We align your product to NHS
+                                    interoperability standards (FHIR, HL7, Open
+                                    APIs), facilitating seamless integration
+                                    with existing healthcare systems and
+                                    enhancing overall operational effectiveness.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="accordion__panel">
-                        <button class="panel__heading">
-                            <h4>5. Usability & Accessibility</h4>
-                            <i class="ph ph-plus"></i>
-                        </button>
-                        <div class="panel__content hidden">
-                            <p class="paragraph">
-                                We incorporate WCAG 2.1 AA compliance into your
-                                product design and testing from the start,
-                                ensuring inclusivity and usability for all
-                                patients and healthcare providers. Usability &
-                                Accessibility aren't retrofitted—they are
-                                built-in.
-                            </p>
+                        <div class="accordion__panel">
+                            <button class="panel__heading">
+                                <h4>5. Usability & Accessibility</h4>
+                                <i class="ph ph-plus"></i>
+                            </button>
+                            <div class="panel__content hidden">
+                                <p class="paragraph">
+                                    We incorporate WCAG 2.1 AA compliance into
+                                    your product design and testing from the
+                                    start, ensuring inclusivity and usability
+                                    for all patients and healthcare providers.
+                                    Usability & Accessibility aren't
+                                    retrofitted—they are built-in.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

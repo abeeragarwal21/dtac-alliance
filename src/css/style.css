@@ -71,6 +71,11 @@
     color: var(--white);
 }
 
+.challenges-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
 /* FAQs Section */
 #section-faq {
     background-color: var(--blue-background);
