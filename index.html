@@ -14,10 +14,10 @@
                 Alliance
             </div>
             <nav class="main-header__nav">
-                <a href="#" class="nav__link">About DTAC</a>
+                <a href="#" class="nav__link">Why Us</a>
                 <a href="#" class="nav__link">Our Services</a>
-                <a href="#" class="nav__link">Resources</a>
-                <a href="#" class="nav__link">Contact Us</a>
+                <a href="#" class="nav__link">Addressing Challenges</a>
+                <a href="#" class="nav__link">FAQs</a>
             </nav>
             <a href="#" class="btn btn--primary">Contact Us</a>
         </header>
@@ -66,30 +66,42 @@
                         <div class="box__icon">
                             <i class="ph ph-chat-circle"></i>
                         </div>
-                        <h4 class="box__heading">Improved communication</h4>
+                        <h4 class="box__heading">
+                            One Conversation, <br />
+                            All Domains
+                        </h4>
                         <p class="box__text">
-                            You don't have to speak with multiple external
-                            stakeholders
+                            With us, you have one integrated team, one shared
+                            understanding, and one streamlined path to
+                            compliance.
                         </p>
                     </div>
                     <div class="boxes-grid__box">
                         <div class="box__icon">
                             <i class="ph ph-arrows-left-right"></i>
                         </div>
-                        <h4 class="box__heading">Integrated Approach</h4>
+                        <h4 class="box__heading">
+                            Compliance Without the Silos
+                        </h4>
                         <p class="box__text">
-                            All five areas overlap in multiple areas. Our
-                            approach ensures that everything flows together
-                            rather than being boxed in silos
+                            Our team's strength lies in our cross-functional
+                            integration. We don't approach your product as five
+                            separate audits. We view it as a living system that
+                            needs coordinated, forward-thinking alignment across
+                            disciplines.
                         </p>
                     </div>
                     <div class="boxes-grid__box">
                         <div class="box__icon">
                             <i class="ph ph-rocket-launch"></i>
                         </div>
-                        <h4 class="box__heading">Speedier Execution</h4>
+                        <h4 class="box__heading">Efficient Delivery</h4>
                         <p class="box__text">
-                            It's a single project rather than 5 separate threads
+                            Our Alliance operates as a single project team
+                            across all DTAC domains, eliminating the common
+                            bottlenecks that slow others down. You'll see faster
+                            progress because the right people are already in the
+                            room.
                         </p>
                     </div>
                 </div>
@@ -205,13 +217,13 @@
                         />
                     </svg>
                 </div>
-                <div class="challenges">
-                    <div class="challenges__challenge">
-                        <button class="challenge__heading">
+                <div class="accordion accordion--challenges">
+                    <div class="accordion__panel">
+                        <button class="panel__heading">
                             <h4>1. Clinical Safety</h4>
                             <i class="ph ph-plus"></i>
                         </button>
-                        <div class="challenge__content hidden">
+                        <div class="panel__content hidden">
                             <p class="paragraph">
                                 With clinical safety experts, we ensure your
                                 compliance with DCB0129 standards, provide
@@ -219,6 +231,70 @@
                                 are proactively identified and rigorously
                                 controlled—giving you peace of mind in the
                                 safety of your digital health technology.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__panel">
+                        <button class="panel__heading">
+                            <h4>2. Technical Security</h4>
+                            <i class="ph ph-plus"></i>
+                        </button>
+                        <div class="panel__content hidden">
+                            <p class="paragraph">
+                                We proactively identify and mitigate
+                                vulnerabilities through rigorous cybersecurity
+                                assessments including DSPT, Cyber Essentials &
+                                Penetration Testing. We Provide tailored
+                                guidance aligned to NHS digital security
+                                standards, ensuring your technology is robust,
+                                secure, and compliant.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__panel">
+                        <button class="panel__heading">
+                            <h4>3. Data Protection</h4>
+                            <i class="ph ph-plus"></i>
+                        </button>
+                        <div class="panel__content hidden">
+                            <p class="paragraph">
+                                Our privacy specialists conduct thorough Data
+                                Protection Impact Assessments (DPIAs), implement
+                                GDPR-compliant frameworks, and provide strategic
+                                advice to safeguard patient data, maintaining
+                                full regulatory compliance, including a Virtual
+                                DPO service.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__panel">
+                        <button class="panel__heading">
+                            <h4>4. Interoperability</h4>
+                            <i class="ph ph-plus"></i>
+                        </button>
+                        <div class="panel__content hidden">
+                            <p class="paragraph">
+                                We align your product to NHS interoperability
+                                standards (FHIR, HL7, Open APIs), facilitating
+                                seamless integration with existing healthcare
+                                systems and enhancing overall operational
+                                effectiveness.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__panel">
+                        <button class="panel__heading">
+                            <h4>5. Usability & Accessibility</h4>
+                            <i class="ph ph-plus"></i>
+                        </button>
+                        <div class="panel__content hidden">
+                            <p class="paragraph">
+                                We incorporate WCAG 2.1 AA compliance into your
+                                product design and testing from the start,
+                                ensuring inclusivity and usability for all
+                                patients and healthcare providers. Usability &
+                                Accessibility aren't retrofitted—they are
+                                built-in.
                             </p>
                         </div>
                     </div>
@@ -236,16 +312,16 @@
                     </div>
                 </div>
                 <div class="faq-grid">
-                    <div class="faq-questions">
-                        <div class="faq-questions__question">
-                            <button class="question__heading">
+                    <div class="accordion">
+                        <div class="accordion__panel">
+                            <button class="panel__heading">
                                 <h4>
                                     My product isn't being marketed to the NHS.
                                     Do I still need DTAC?
                                 </h4>
                                 <i class="ph ph-plus"></i>
                             </button>
-                            <div class="question__answer hidden">
+                            <div class="panel__content hidden">
                                 <p class="paragraph">
                                     It's currently not mandatory, however some
                                     private clients may still request it for
@@ -256,8 +332,8 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="faq-questions__question">
-                            <button class="question__heading">
+                        <div class="accordion__panel">
+                            <button class="panel__heading">
                                 <h4>
                                     I already have extensive evidence from
                                     registering as a Medical Device. Do I still
@@ -265,7 +341,7 @@
                                 </h4>
                                 <i class="ph ph-plus"></i>
                             </button>
-                            <div class="question__answer hidden">
+                            <div class="panel__content hidden">
                                 <p class="paragraph">
                                     Yes, all the evidence still needs to be
                                     mapped across to the DTAC process, and this
@@ -274,15 +350,15 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="faq-questions__question">
-                            <button class="question__heading">
+                        <div class="accordion__panel">
+                            <button class="panel__heading">
                                 <h4>
                                     Is it sufficient to have Cyber Essentials?
                                     Do I need CE Plus or ISO27001?
                                 </h4>
                                 <i class="ph ph-plus"></i>
                             </button>
-                            <div class="question__answer hidden">
+                            <div class="panel__content hidden">
                                 <p class="paragraph">
                                     Cyber Essentials is the default requirement.
                                     However, commissioners are requesting a
@@ -292,8 +368,8 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="faq-questions__question">
-                            <button class="question__heading">
+                        <div class="accordion__panel">
+                            <button class="panel__heading">
                                 <h4>
                                     I am a distributor for an international
                                     manufacturer. Do I complete DTAC on their
@@ -301,19 +377,19 @@
                                 </h4>
                                 <i class="ph ph-plus"></i>
                             </button>
-                            <div class="question__answer hidden">
+                            <div class="panel__content hidden">
                                 <p class="paragraph">
                                     The manufacturer has to complete DTAC but
                                     they can be supported
                                 </p>
                             </div>
                         </div>
-                        <div class="faq-questions__question">
-                            <button class="question__heading">
+                        <div class="accordion__panel">
+                            <button class="panel__heading">
                                 <h4>Is DTAC a one-off activity?</h4>
                                 <i class="ph ph-plus"></i>
                             </button>
-                            <div class="question__answer hidden">
+                            <div class="panel__content hidden">
                                 <p class="paragraph">
                                     You need to demonstrate ongoing adherence to
                                     all of these assurance measures, which

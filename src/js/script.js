@@ -1,39 +1,21 @@
-const faqContainer = document.querySelector(".faq-questions");
+const accordions = document.querySelectorAll(".accordion");
+console.log(accordions);
 
-faqContainer.addEventListener("click", function (e) {
-    const questionContainer = e.target.closest(".faq-questions__question");
+accordions.forEach((accordion) => {
+    accordion.addEventListener("click", function (e) {
+        const accordionPanel = e.target.closest(".accordion__panel");
 
-    if (!questionContainer) {
-        return;
-    }
+        if (!accordionPanel) {
+            return;
+        }
 
-    const faqAnswer = questionContainer.querySelector(".question__answer");
-    faqAnswer.classList.toggle("hidden");
+        const panelContent = accordionPanel.querySelector(".panel__content");
+        panelContent.classList.toggle("hidden");
 
-    const faqIcon = questionContainer.querySelector(".ph");
-    faqIcon.classList = "";
-    faqIcon.classList = `ph ph-${
-        faqAnswer.classList.contains("hidden") ? "plus" : "minus"
-    }`;
-});
-
-const challengesContainer = document.querySelector(".challenges");
-
-challengesContainer.addEventListener("click", function (e) {
-    const challengeContainer = e.target.closest(".challenges__challenge");
-
-    if (!challengeContainer) {
-        return;
-    }
-
-    const challengeContent = challengeContainer.querySelector(
-        ".challenge__content"
-    );
-    challengeContent.classList.toggle("hidden");
-
-    // // const faqIcon = questionContainer.querySelector(".ph");
-    // // faqIcon.classList = "";
-    // // faqIcon.classList = `ph ph-${
-    // //     faqAnswer.classList.contains("hidden") ? "plus" : "minus"
-    // }`;
+        const panelIcon = accordionPanel.querySelector(".ph");
+        panelIcon.classList = "";
+        panelIcon.classList = `ph ph-${
+            panelContent.classList.contains("hidden") ? "plus" : "minus"
+        }`;
+    });
 });
