@@ -190,7 +190,8 @@ h4 {
     padding: var(--space-lg) var(--space-2xl);
     background-color: var(--blue-background);
     position: fixed;
-    width: 100%;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .main-header__logo {
@@ -198,6 +199,14 @@ h4 {
     font-weight: 500;
     text-decoration: none;
     color: var(--black);
+}
+
+.mobile-nav-btn {
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: var(--font-icon);
+    display: none;
 }
 
 .main-footer {
