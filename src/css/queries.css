@@ -52,6 +52,18 @@
     .mobile-nav-btn {
         display: block;
     }
+
+    .standout__heading {
+        font-size: 6.4rem;
+    }
+
+    h3 {
+        font-size: 2.8rem;
+    }
+
+    #section-standout svg {
+        width: 80vw;
+    }
 }
 
 @media (width < 755px) {
@@ -94,6 +106,15 @@
         padding: var(--space-lg);
         min-height: fit-content;
         max-width: 80%;
+    }
+
+    #section-standout {
+        padding-left: var(--space-xs);
+        padding-right: var(--space-xs);
+    }
+
+    .standout__heading {
+        font-size: 5.6rem;
     }
 }
 

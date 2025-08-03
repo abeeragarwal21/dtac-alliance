@@ -1,3 +1,4 @@
+// Accordions
 const accordions = document.querySelectorAll(".accordion");
 console.log(accordions);
 
@@ -33,4 +34,27 @@ accordions.forEach((accordion) => {
             setChallengeStyles(accordionPanel, panelHeading, isHidden);
         }
     });
+});
+
+// Mobile menu
+const mobileNavBtn = document.querySelector(".mobile-nav-btn");
+const mobileMenu = document.querySelector(".mobile-menu");
+const mobileNavBtnIcon = mobileNavBtn.querySelector(".ph");
+
+let scrollPosition = 0;
+
+function showHideMobileNav() {
+    mobileMenu.classList.toggle("hidden");
+    mobileNavBtnIcon.classList = "";
+    mobileNavBtnIcon.classList = `ph ph-${
+        mobileMenu.classList.contains("hidden") ? "list" : "x"
+    }`;
+}
+
+mobileNavBtn.addEventListener("click", function () {
+    showHideMobileNav();
+});
+
+mobileMenu.addEventListener("click", function () {
+    showHideMobileNav();
 });

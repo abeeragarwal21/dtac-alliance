@@ -69,7 +69,7 @@ body {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 /* Text (headings, paragraphs etc) */
@@ -192,6 +192,7 @@ h4 {
     position: fixed;
     width: 100vw;
     overflow-x: hidden;
+    z-index: 3;
 }
 
 .main-header__logo {
@@ -207,6 +208,32 @@ h4 {
     font-family: inherit;
     font-size: var(--font-icon);
     display: none;
+}
+
+.mobile-menu {
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 5rem;
+    padding-left: 10vw;
+    position: relative;
+    background-color: var(--blue-background);
+    overflow: hidden;
+    position: fixed;
+    animation: opacity-0-100 0.5s;
+    overflow-y: scroll;
+    padding-top: 15rem;
+}
+
+.mobile-nav__link:link,
+.mobile-nav__link:visited {
+    font-size: var(--font-md);
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .main-footer {
