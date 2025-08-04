@@ -13,6 +13,8 @@
 	"author": "abeeragarwal21",
 	"license": "ISC",
 	"devDependencies": {
+		"@parcel/packager-xml": "^2.15.4",
+		"@parcel/transformer-xml": "^2.15.4",
 		"parcel": "^2.15.4"
 	},
 	"dependencies": {

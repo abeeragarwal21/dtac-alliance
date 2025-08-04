@@ -24,6 +24,16 @@
     }
 }
 
+@media (width < 1150px) {
+    .cta-card {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-card__image {
+        display: none;
+    }
+}
+
 @media (width < 950px) {
     #hero {
         grid-template-columns: 1.5fr 1fr;
@@ -39,14 +49,6 @@
 
     .challenges-grid {
         grid-template-columns: 0.8fr;
-    }
-
-    .cta-card {
-        grid-template-columns: 1fr;
-    }
-
-    .cta-card__image {
-        display: none;
     }
 }
 
