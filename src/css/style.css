@@ -97,6 +97,11 @@
     padding: var(--space-lg);
 }
 
+/* Partners */
+#partnership {
+    background-color: var(--blue-background);
+}
+
 /* Cta Section */
 #cta {
     background-color: var(--blue-background);
