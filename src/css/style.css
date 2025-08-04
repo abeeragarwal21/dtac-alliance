@@ -83,7 +83,7 @@
 
 .faq-grid {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: var(--space-2xl);
 }
 
@@ -91,6 +91,10 @@
     height: 100%;
     background-color: var(--white);
     border-radius: var(--border-radius-box);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    padding: var(--space-lg);
 }
 
 /* Cta Section */
