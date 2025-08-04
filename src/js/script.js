@@ -65,3 +65,26 @@ mobileNavBtn.addEventListener("click", function () {
 mobileMenu.addEventListener("click", function () {
     showHideMobileNav();
 });
+
+// Tabbed Carousel
+const tabsContainer = document.querySelector(".tabbed-carousel__tabs");
+const carouselContents = document.querySelectorAll(".tabbed-carousel__content");
+
+tabsContainer.addEventListener("click", function (e) {
+    const tab =
+        e.target.closest(".tabs__tab") || e.target.querySelector(".tabs__tab");
+
+    carouselContents.forEach((view) =>
+        view.classList.remove("tabbed-carousel__content--active")
+    );
+
+    Array.from(tabsContainer.children).forEach((tab) =>
+        tab.classList.remove("tabs__tab--active")
+    );
+
+    tab.classList.add("tabs__tab--active");
+
+    document
+        .querySelector(`#tabbed-carousel__content--${tab.dataset.tab}`)
+        .classList.add("tabbed-carousel__content--active");
+});
