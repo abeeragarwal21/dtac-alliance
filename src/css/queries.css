@@ -1,5 +1,11 @@
+@media (width > 1750px) {
+    .cta-card {
+        max-height: 40vh;
+    }
+}
+
 @media (width < 1200px) {
-    #section-hero {
+    #hero {
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -15,7 +21,7 @@
 }
 
 @media (width < 950px) {
-    #section-hero {
+    #hero {
         grid-template-columns: 1.5fr 1fr;
     }
 
@@ -61,13 +67,13 @@
         font-size: 2.8rem;
     }
 
-    #section-standout svg {
+    #standout svg {
         width: 80vw;
     }
 }
 
 @media (width < 755px) {
-    #section-hero {
+    #hero {
         grid-template-columns: 3fr 1fr;
     }
 
@@ -108,7 +114,7 @@
         max-width: 80%;
     }
 
-    #section-standout {
+    #standout {
         padding-left: var(--space-xs);
         padding-right: var(--space-xs);
     }
@@ -129,7 +135,7 @@
         padding: var(--space-2xl) var(--space-xl);
     }
 
-    #section-hero {
+    #hero {
         grid-template-columns: 1fr;
     }
 

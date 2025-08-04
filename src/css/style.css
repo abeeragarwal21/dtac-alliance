@@ -1,23 +1,23 @@
 /* Hero section */
-#section-hero {
+#hero {
     background-image: url("/src/img/hero-banner.png");
     background-size: cover;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
 }
 
-#section-hero .section-top {
+#hero .section-top {
     margin-top: 15rem;
     margin-bottom: 9rem;
 }
 
 /* Why us section */
-#section-why {
+#why {
     background-color: var(--blue-background);
 }
 
 /* Standout section */
-#section-standout {
+#standout {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,12 +53,12 @@
 }
 
 /* Services section */
-#section-services {
+#services {
     background-color: var(--blue-background);
 }
 
 /* Challenges section */
-#section-challenges {
+#challenges {
     background-image: linear-gradient(var(--blue-primary), var(--blue-dark));
     color: white;
 }
@@ -73,11 +73,11 @@
 
 .challenges-grid {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 3fr 1fr;
 }
 
 /* FAQs Section */
-#section-faq {
+#faq {
     background-color: var(--blue-background);
 }
 
@@ -94,7 +94,7 @@
 }
 
 /* Cta Section */
-#section-cta {
+#cta {
     background-color: var(--blue-background);
     padding: none;
 }
@@ -104,6 +104,7 @@
     grid-template-columns: 1.5fr 1fr;
     border-radius: var(--border-radius-box);
     overflow: hidden;
+    max-height: 50vh;
 }
 
 .cta-card__content {
