@@ -1,6 +1,6 @@
 @media (width > 1750px) {
     .cta-card {
-        max-height: 40vh;
+        max-height: 40rem;
     }
 }
 
@@ -75,6 +75,10 @@
 
     h3 {
         font-size: 2.8rem;
+    }
+
+    .section-top__paragraph {
+        font-size: var(--font-sm);
     }
 
     #standout svg {

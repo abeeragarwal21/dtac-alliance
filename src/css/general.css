@@ -5,6 +5,7 @@
     --font-xs: 1.3rem; /* 13px */
     --font-sm: 1.5rem; /* 15px */
     --font-body: 1.6rem; /* 16px */
+    --font-semimd: 1.8rem;
     --font-md: 2rem; /* 20px */
     --font-lg: 2.4rem; /* 24px */
     --font-h3: 3.6rem; /* 36px */
@@ -23,6 +24,7 @@
     --space-xs: 0.8rem; /* 8px */
     --space-sm: 1.2rem; /* 12px */
     --space-md: 1.6rem; /* 16px */
+    --space-semilg: 2rem;
     --space-lg: 2.4rem; /* 24px */
     --space-xl: 3.2rem; /* 32px */
     --space-2xl: 4.8rem; /* 48px */
@@ -70,6 +72,7 @@ body {
 }
 
 .hidden {
+    opacity: 0;
     display: none !important;
 }
 
@@ -295,9 +298,9 @@ button {
 }
 
 .main-footer__copyright {
-    background-color: var(--blue-light);
-    padding: var(--space-sm) var(--space-4xl);
-    color: var(--grey);
+    background-color: var(--blue-primary);
+    padding: var(--space-xs) var(--space-4xl);
+    color: var(--white);
     font-size: var(--font-xs);
     text-align: center;
 }
@@ -426,7 +429,7 @@ section {
 .accordion__panel {
     border: 2px solid var(--white);
     background-color: var(--white);
-    padding: var(--space-lg);
+    padding: var(--space-semilg) var(--space-lg);
     border-radius: var(--border-radius-box);
     display: flex;
     flex-direction: column;
@@ -444,6 +447,12 @@ section {
     width: 100%;
     font-family: inherit;
     text-align: start;
+}
+
+.panel__heading h4 {
+    font-size: var(--font-semimd);
+    font-weight: 600;
+    /* text-transform: uppercase; */
 }
 
 .panel__content {
