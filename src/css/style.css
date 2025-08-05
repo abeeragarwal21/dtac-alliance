@@ -105,8 +105,6 @@
 /* Partners */
 #partnership {
     background-color: var(--blue-background);
-    padding-top: var(--space-2xl);
-    padding-bottom: var(--space-2xl);
 }
 
 /* Partner list layout */
