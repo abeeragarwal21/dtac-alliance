@@ -2,7 +2,6 @@ import { lock, unlock } from "tua-body-scroll-lock";
 
 // Accordions
 const accordions = document.querySelectorAll(".accordion");
-console.log(accordions);
 
 function setChallengesAccordionStyles(accordionPanel, panelHeading, isHidden) {
     if (isHidden) {
