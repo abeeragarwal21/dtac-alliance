@@ -137,6 +137,7 @@ h4 {
     font-weight: 500;
     transition: all 0.2s;
     width: fit-content;
+    border: none;
 }
 
 .btn--primary,
