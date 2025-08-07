@@ -210,6 +210,12 @@
     }
 }
 
+@media (width < 450px) {
+    #challenges .section-top svg {
+        width: 90%;
+    }
+}
+
 @media (width < 400px) {
     section {
         padding: var(--space-2xl) var(--space-md);
