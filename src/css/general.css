@@ -71,6 +71,16 @@ body {
     overflow-x: hidden !important;
 }
 
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .hidden {
     display: none !important;
 }
@@ -232,6 +242,7 @@ button {
     height: 100vh;
     width: 100vw;
     z-index: 2;
+    opacity: 0;
     display: flex;
     padding: 1rem;
     flex-direction: column;
@@ -241,9 +252,10 @@ button {
     background-color: var(--blue-background);
     overflow: hidden;
     position: fixed;
-    animation: opacity-0-100 0.5s;
     overflow-y: scroll;
     padding-top: 15rem;
+    animation: opacity 0.2s;
+    animation-fill-mode: forwards;
 }
 
 .mobile-nav__link:link,
@@ -359,7 +371,7 @@ section {
 }
 
 .subheading {
-    font-size: var(--font-md);
+    font-size: var(--font-lg);
 }
 
 .subheading--grey {
@@ -455,16 +467,6 @@ section {
     font-size: var(--font-semimd);
     font-weight: 600;
     /* text-transform: uppercase; */
-}
-
-@keyframes opacity {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
 }
 
 .panel__content {
