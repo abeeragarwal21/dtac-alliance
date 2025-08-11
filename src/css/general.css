@@ -9,8 +9,8 @@
     --font-md: 2rem; /* 20px */
     --font-lg: 2.4rem; /* 24px */
     --font-h3: 3.6rem; /* 36px */
-    --font-h2: 4.4rem; /* 44px */
-    --font-h1: 5.2rem; /* 52px */
+    --font-h2: 5rem; /* 44px */
+    --font-h1: 5.4rem; /* 52px */
 
     --font-icon: 2.6rem; /* 26px */
 
@@ -43,12 +43,15 @@
     --white: #ffffff;
 
     /* Fonts */
-    --display-font: "Unna", serif;
+    --display-font: "Rethink Sans", sans-serif;
     --body-font: "Inter", sans-serif;
 
     /* Border radius */
     --border-radius-btn: 50px;
     --border-radius-box: 15px;
+
+    /* Shadow */
+    --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 * {
@@ -244,9 +247,9 @@ button {
     z-index: 2;
     opacity: 0;
     display: flex;
-    padding: 1rem;
+    padding: var(--space-sm);
     flex-direction: column;
-    gap: 5rem;
+    gap: var(--space-2xl);
     padding-left: 10vw;
     position: relative;
     background-color: var(--blue-background);
@@ -372,6 +375,7 @@ section {
 
 .subheading {
     font-size: var(--font-lg);
+    font-family: var(--display-font);
 }
 
 .subheading--grey {
@@ -407,7 +411,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: var(--space-md);
-    box-shadow: 0 2.4rem 4.8rem -4px rgba(14, 22, 48, 0.1);
+    box-shadow: var(--box-shadow);
     transition: all 0.3s;
     min-height: 32rem;
 }
@@ -446,8 +450,18 @@ section {
     display: flex;
     flex-direction: column;
     gap: var(--space-md);
-    box-shadow: 0 2.4rem 4.8rem -4px rgba(14, 22, 48, 0.05);
+    box-shadow: var(--box-shadow);
     transition: all 0.4s;
+}
+
+.accordion--challenges .accordion__panel {
+    padding: var(--space-md) var(--space-lg);
+}
+
+.accordion--challenges .accordion__panel .panel__heading h4 {
+    text-transform: uppercase;
+    font-size: var(--font-body);
+    font-weight: 500;
 }
 
 .panel__heading {
@@ -497,11 +511,11 @@ section {
     background-color: var(--blue-light);
     border: none;
     font-family: inherit;
-    font-size: var(--font-body);
+    font-size: var(--font-sm);
     font-weight: 500;
     border-radius: var(--border-radius-btn);
-    min-width: 25rem;
-    padding: var(--space-md);
+    min-width: 22rem;
+    padding: var(--space-sm);
     transition: all 0.2s;
 }
 

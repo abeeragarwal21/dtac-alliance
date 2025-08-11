@@ -1,14 +1,24 @@
 /* Hero section */
 #hero {
-    background-image: url("/src/img/hero-banner.png");
+    background-image: linear-gradient(
+            to top,
+            var(--blue-background),
+            35%,
+            transparent
+        ),
+        url("/src/img/hero-banner.jpg");
     background-size: cover;
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
 }
 
 #hero .section-top {
     margin-top: 15rem;
     margin-bottom: 9rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(2px);
+    padding: var(--space-2xl);
+    width: 75%;
+    border-radius: var(--border-radius-box);
 }
 
 /* Why us section */
@@ -73,7 +83,7 @@
 
 .challenges-grid {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 2fr;
 }
 
 /* FAQs Section */
@@ -99,7 +109,7 @@
     padding: var(--space-xl) var(--space-lg);
     height: fit-content;
     top: 0;
-    box-shadow: 0 2.4rem 4.8rem -4px rgba(14, 22, 48, 0.05);
+    box-shadow: var(--box-shadow);
 }
 
 /* Partners */
@@ -111,7 +121,7 @@
 .partner-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.5rem;
+    gap: var(--space-xl);
 }
 
 /* Partner entry layout */
@@ -120,13 +130,18 @@
     border-radius: var(--border-radius-box);
     align-items: center;
     padding: var(--space-lg);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--box-shadow);
     text-align: left;
     display: grid;
     grid-template-columns: 1fr 5fr;
     gap: var(--space-xl);
     text-decoration: none;
     color: var(--black);
+    transition: all 0.3s;
+}
+
+.partner-entry:hover {
+    transform: scale(1.04);
 }
 
 .partner-entry img {
@@ -148,7 +163,6 @@
 /* Cta Section */
 #cta {
     background-color: var(--blue-background);
-    padding: none;
 }
 
 .cta-card {
@@ -156,7 +170,6 @@
     grid-template-columns: 1.5fr 1fr;
     border-radius: var(--border-radius-box);
     overflow: hidden;
-    max-height: 50vh;
 }
 
 .cta-card__content {
