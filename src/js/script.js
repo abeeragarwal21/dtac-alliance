@@ -3,16 +3,6 @@ import { lock, unlock } from "tua-body-scroll-lock";
 // Accordions
 const accordions = document.querySelectorAll(".accordion");
 
-function setChallengesAccordionStyles(accordionPanel, panelHeading, isHidden) {
-    if (isHidden) {
-        accordionPanel.style.backgroundColor = "transparent";
-        panelHeading.style.color = "#fff";
-    } else {
-        accordionPanel.style.backgroundColor = "#fff";
-        panelHeading.style.color = "#000";
-    }
-}
-
 accordions.forEach((accordion) => {
     accordion.addEventListener("click", function (e) {
         const accordionPanel = e.target.closest(".accordion__panel");
@@ -29,11 +19,13 @@ accordions.forEach((accordion) => {
         }`;
 
         if (accordion.classList.contains("accordion--challenges")) {
-            setChallengesAccordionStyles(
-                accordionPanel,
-                panelHeading,
-                panelContent.classList.contains("hidden")
-            );
+            if (panelContent.classList.contains("hidden")) {
+                accordionPanel.style.backgroundColor = "transparent";
+                panelHeading.style.color = "#fff";
+            } else {
+                accordionPanel.style.backgroundColor = "#fff";
+                panelHeading.style.color = "#000";
+            }
         }
     });
 });

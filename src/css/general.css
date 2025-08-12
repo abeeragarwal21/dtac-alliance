@@ -1,17 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
-    /* Font size scale (rem) */
-    --font-xs: 1.3rem; /* 13px */
-    --font-sm: 1.5rem; /* 15px */
-    --font-body: 1.6rem; /* 16px */
-    --font-semimd: 1.8rem;
-    --font-md: 2rem; /* 20px */
-    --font-lg: 2.4rem; /* 24px */
-    --font-h3: 3.6rem; /* 36px */
-    --font-h2: 5rem; /* 44px */
-    --font-h1: 5.4rem; /* 52px */
+    /* Hero heading */
+    --fnt-heading-hero: 5.8rem;
 
+    /* Section headings */
+    --fnt-heading-section: 5.4rem;
+
+    /* Large font for h4 and mobile nav links */
+    --fnt-lg: 2.4rem;
+
+    /* Body font */
+    --fnt-body: 1.6rem;
+
+    /* Body font for text inside box components like accordions, carousels, box grids */
+    --fnt-body-box: 1.4rem;
+
+    /* Small font for buttons and links */
+    --fnt-sm: 1.4rem;
+
+    /* Font size for section subheadings */
+    --fnt-subheading-section: 2.4rem;
+
+    /* Font size for box sections that needs to be smaller (accordions etc) */
+    --fnt-small-box-heading: 1.8rem;
+
+    /* h3 font size */
+    --fnt-h3: 3.6rem;
+
+    /* Icon size */
     --font-icon: 2.6rem; /* 26px */
 
     /* Line height scale */
@@ -96,30 +113,30 @@ body {
 }
 
 h1 {
-    font-size: var(--font-h1);
+    font-size: var(--fnt-heading-hero);
     line-height: var(--lh-tight);
     font-family: var(--display-font);
 }
 
 h2 {
-    font-size: var(--font-h2);
+    font-size: var(--fnt-heading-section);
     line-height: var(--lh-tight);
     font-family: var(--display-font);
 }
 
 h3 {
-    font-size: var(--font-h3);
+    font-size: var(--fnt-h3);
     line-height: var(--lh-tight);
     font-family: var(--display-font);
 }
 
 h4 {
-    font-size: var(--font-md);
+    font-size: var(--fnt-lg);
     font-weight: 600;
 }
 
 .paragraph {
-    font-size: var(--font-body);
+    font-size: var(--fnt-body);
     line-height: var(--lh-loose);
 }
 
@@ -142,9 +159,13 @@ h4 {
 }
 
 /* Primary button */
+button {
+    color: black;
+}
+
 .btn {
     text-decoration: none;
-    font-size: var(--font-sm);
+    font-size: var(--fnt-sm);
     padding: var(--space-md) var(--space-lg);
     border-radius: var(--border-radius-btn);
     font-weight: 500;
@@ -181,13 +202,13 @@ h4 {
     color: var(--white);
 }
 
-/* Primary Link */
+/* Primary Link
 .link:link,
 .link:visited {
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-size: var(--font-sm);
+    font-size: var(--fnt-sm);
     color: var(--blue-primary);
     gap: var(--space-xxs);
     transition: all 0.4s;
@@ -207,11 +228,7 @@ h4 {
 .link i {
     font-size: var(--font-body);
     font-weight: 600;
-}
-
-button {
-    color: black;
-}
+} */
 
 /* Header, footer and navigation */
 .main-header {
@@ -227,7 +244,7 @@ button {
 }
 
 .main-header__logo {
-    font-size: var(--font-md);
+    font-size: var(--fnt-lg);
     font-weight: 500;
     text-decoration: none;
     color: var(--black);
@@ -263,7 +280,7 @@ button {
 
 .mobile-nav__link:link,
 .mobile-nav__link:visited {
-    font-size: var(--font-md);
+    font-size: var(--fnt-lg);
     color: var(--black);
     text-decoration: none;
     font-weight: 500;
@@ -314,9 +331,9 @@ button {
 
 .main-footer__copyright {
     background-color: var(--blue-primary);
-    padding: var(--space-xs) var(--space-4xl);
+    padding: var(--space-sm) var(--space-4xl);
     color: var(--white);
-    font-size: var(--font-xs);
+    font-size: var(--fnt-sm);
     text-align: center;
 }
 
@@ -334,13 +351,13 @@ button {
 
 .nav__heading {
     text-transform: uppercase;
-    font-size: var(--font-body);
+    font-size: var(--fnt-body);
     font-weight: 600;
 }
 
 .nav__link:link,
 .nav__link:visited {
-    font-size: var(--font-sm);
+    font-size: var(--fnt-body);
     text-decoration: none;
     color: var(--black);
     border-bottom: 2px solid transparent;
@@ -374,7 +391,7 @@ section {
 }
 
 .subheading {
-    font-size: var(--font-lg);
+    font-size: var(--fnt-subheading-section);
     font-family: var(--display-font);
 }
 
@@ -391,7 +408,7 @@ section {
 }
 
 .section-top__paragraph {
-    font-size: var(--font-body);
+    font-size: var(--fnt-body);
     color: var(--colour-body);
     max-width: 80%;
     line-height: var(--lh-normal);
@@ -417,7 +434,7 @@ section {
 }
 
 .box__text {
-    font-size: var(--font-sm);
+    font-size: var(--fnt-body-box);
     font-weight: 350;
     line-height: var(--lh-normal);
     color: var(--grey);
@@ -454,16 +471,6 @@ section {
     transition: all 0.4s;
 }
 
-.accordion--challenges .accordion__panel {
-    padding: var(--space-md) var(--space-lg);
-}
-
-.accordion--challenges .accordion__panel .panel__heading h4 {
-    text-transform: uppercase;
-    font-size: var(--font-body);
-    font-weight: 500;
-}
-
 .panel__heading {
     background-color: transparent;
     border: none;
@@ -478,20 +485,19 @@ section {
 }
 
 .panel__heading h4 {
-    font-size: var(--font-semimd);
+    font-size: var(--fnt-small-box-heading);
     font-weight: 600;
     /* text-transform: uppercase; */
 }
 
 .panel__content {
-    color: var(--black);
     opacity: 0;
     animation: opacity 0.5s;
     animation-fill-mode: forwards;
 }
 
 .panel__heading i {
-    font-size: var(--font-lg);
+    font-size: var(--font-icon);
 }
 
 /* Tabbed Carousel */
@@ -511,7 +517,7 @@ section {
     background-color: var(--blue-light);
     border: none;
     font-family: inherit;
-    font-size: var(--font-sm);
+    font-size: var(--fnt-sm);
     font-weight: 500;
     border-radius: var(--border-radius-btn);
     min-width: 22rem;
