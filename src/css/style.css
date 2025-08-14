@@ -344,7 +344,6 @@
     }
 
     #hero .section-top {
-        margin-top: 10rem;
         width: 98%;
         padding: var(--space-xl);
     }
