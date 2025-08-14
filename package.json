@@ -1,23 +1,23 @@
 {
-	"name": "dtac-alliance",
-	"version": "1.0.0",
-	"description": "DTAC ALliance website",
-	"scripts": {
-		"start": "parcel index.html",
-		"build": "parcel build index.html"
-	},
-	"repository": {
-		"type": "git",
-		"url": "dtac-alliance"
-	},
-	"author": "abeeragarwal21",
-	"license": "ISC",
-	"devDependencies": {
-		"@parcel/packager-xml": "^2.15.4",
-		"@parcel/transformer-xml": "^2.15.4",
-		"parcel": "^2.15.4"
-	},
-	"dependencies": {
-		"tua-body-scroll-lock": "^1.5.3"
-	}
+    "name": "dtac-alliance",
+    "version": "1.0.0",
+    "description": "DTAC ALliance website",
+    "scripts": {
+        "start": "parcel index.html",
+        "build": "parcel build index.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "dtac-alliance"
+    },
+    "author": "abeeragarwal21",
+    "license": "ISC",
+    "devDependencies": {
+        "@parcel/packager-xml": "^2.15.4",
+        "@parcel/transformer-xml": "^2.15.4",
+        "parcel": "^2.15.4"
+    },
+    "dependencies": {
+        "tua-body-scroll-lock": "^1.5.3"
+    }
 }
