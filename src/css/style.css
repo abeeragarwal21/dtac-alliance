@@ -89,7 +89,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--space-md);
-    transition: opacity 0.3s, max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.5s, max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     pointer-events: none;
 }
 .box__text--extra.expanded {
@@ -346,6 +346,7 @@
     #hero .section-top {
         margin-top: 10rem;
         width: 98%;
+        padding: var(--space-xl);
     }
 }
 
@@ -373,6 +374,14 @@
 @media (width < 450px) {
     #challenges .section-top svg {
         width: 90%;
+    }
+
+    #hero {
+        padding: var(--space-md);
+    }
+
+    #hero .section-top {
+        width: 99%;
     }
 }
 
