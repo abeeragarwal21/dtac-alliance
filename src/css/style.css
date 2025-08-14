@@ -12,10 +12,10 @@
 }
 
 #hero .section-top {
-    margin-top: 15rem;
+    margin-top: 12rem;
     margin-bottom: 9rem;
     background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
     padding: var(--space-2xl);
     width: 80%;
     border-radius: var(--border-radius-box);
@@ -71,6 +71,31 @@
 /* Services section */
 #services {
     background-color: var(--blue-background);
+}
+
+#mobile-carousel-boxes {
+    display: none;
+}
+
+#mobile-carousel-boxes .boxes-grid__box {
+    width: 70vw;
+    max-width: 100%;
+}
+
+.box__text--extra {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    transition: opacity 0.3s, max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+}
+.box__text--extra.expanded {
+    opacity: 1;
+    max-height: 500px; /* adjust as needed for your content */
+    pointer-events: auto;
 }
 
 /* Challenges section */
@@ -143,7 +168,7 @@
     background: var(--white);
     border-radius: var(--border-radius-box);
     align-items: center;
-    padding: var(--space-lg);
+    padding: var(--space-md) var(--space-lg);
     box-shadow: var(--box-shadow);
     text-align: left;
     display: grid;
@@ -187,7 +212,7 @@
 }
 
 .cta-card__content {
-    background-color: var(--blue-primary);
+    background-color: #2b4496;
     padding: var(--space-3xl);
     color: var(--white);
     display: flex;

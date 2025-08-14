@@ -202,11 +202,14 @@ button {
     color: var(--white);
 }
 
-/* Primary Link
+/* Primary Link */
+.link,
 .link:link,
 .link:visited {
     display: flex;
     align-items: center;
+    border: none;
+    font-family: inherit;
     text-decoration: none;
     font-size: var(--fnt-sm);
     color: var(--blue-primary);
@@ -215,7 +218,9 @@ button {
     font-weight: 500;
     padding: var(--space-xs);
     width: 150px;
+    background-color: transparent;
     border-radius: 8px;
+    transform: translateX(calc(-1 * var(--space-xs)));
 }
 
 .link:hover,
@@ -228,7 +233,7 @@ button {
 .link i {
     font-size: var(--font-body);
     font-weight: 600;
-} */
+}
 
 /* Header, footer and navigation */
 .main-header {
@@ -450,6 +455,10 @@ section {
     font-size: var(--font-icon);
     border-radius: 100%;
     color: var(--blue-primary);
+}
+
+.boxes-grid__box .link {
+    margin-top: auto;
 }
 
 /* Accordion Component */

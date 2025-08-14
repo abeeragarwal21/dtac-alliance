@@ -79,3 +79,14 @@ tabsContainer.addEventListener("click", function (e) {
         .querySelector(`#tabbed-carousel__content--${tab.dataset.tab}`)
         .classList.add("tabbed-carousel__content--active");
 });
+
+document.addEventListener("click", function (e) {
+    const btn = e.target.closest(".read-more");
+    if (!btn) return;
+    const readMoreContent =
+        btn.parentElement.querySelector(".box__text--extra");
+    if (!readMoreContent) return;
+
+    const expanded = readMoreContent.classList.toggle("expanded");
+    btn.innerText = expanded ? "Read less" : "Read more";
+});
